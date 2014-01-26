@@ -14,6 +14,10 @@
    * **nltk.text.Text.count(str)**: Count the number of times this word appears in the text.
    * **nltk.text.Text.index(str)**: Find the index of the first occurrence of the word in the text.
 
+ 1. Classes encountered
+
+   * **class nltk.probability.FreqDist()**: records the number of times each outcome of an experiment has occurred
+
  1. Structure of texts
  
  They are lists of words and tokens.
