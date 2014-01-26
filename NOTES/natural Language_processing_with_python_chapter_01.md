@@ -10,7 +10,19 @@
    * **nltk.text.Text.similar(str, num=20)**: distributional similarity
    * **nltk.text.Text.common_contexts(list, num=20)**: Find contexts where the specified words appear; list most frequent common contexts first.
    * **nltk.text.Text.dispersion_plot(list, num=20)**: Produce a plot showing the distribution of the words through the text.
-   * **generate(length=100)**: Print random text, generated using a trigram language model.
+   * **nltk.text.Text.generate(length=100)**: Print random text, generated using a trigram language model.
+   * **nltk.text.Text.count(str)**: Count the number of times this word appears in the text.
+   * **nltk.text.Text.index(str)**: Find the index of the first occurrence of the word in the text.
+
+ 1. Structure of texts
+ 
+ They are lists of words and tokens.
+
+ 1. Terms and measures of texts
+ 
+   * **[word] types**: unique forms of words or other entities such as punctuation
+   * **lexical diversity**: (total words) / (unique words)
+
 
 
 [end]
