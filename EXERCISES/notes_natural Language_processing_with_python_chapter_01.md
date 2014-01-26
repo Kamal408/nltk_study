@@ -67,4 +67,4 @@ or
         running.update(sent2, sent3, sent4, sent5, sent6, sent7, sent8)
         sorted(list(running))
 
-   We could also eliminate any items that are not composed of letters or a hyphen.
+   We could also eliminate any items that are not composed of letters or a hyphen or ending in a period.
