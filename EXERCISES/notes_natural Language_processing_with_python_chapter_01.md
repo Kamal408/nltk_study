@@ -36,7 +36,7 @@
 
         sorted(set([i for i in text5 if i.startswith('b')]))
 
-or
+   or
 
         sorted(set([i for i in text5 if i and i[0] == 'b']))
 
