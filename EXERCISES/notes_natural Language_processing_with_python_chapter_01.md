@@ -7,7 +7,7 @@
         In [1]: len(text2)
         Out[1]: 141576
 
-   How many distinct words are there?
+   **Question**: How many distinct words are there?
 
    **Answer**: 
 
@@ -59,14 +59,14 @@
                 break
         print 'text9[{}:{}]: {}'.format(start, stop, text9[start:stop])
 
- Output: 
+   Output: 
 
         text9[613:644]: ['CHAPTER', 'I', 'THE', 'TWO', 'POETS', 'OF', 'SAFFRON',
         'PARK', 'THE', 'suburb', 'of', 'Saffron', 'Park', 'lay', 'on', 'the',
         'sunset', 'side', 'of', 'London', ',', 'as', 'red', 'and', 'ragged',
         'as', 'a', 'cloud', 'of', 'sunset', '.']
 
- Pretty close.
+   Pretty close.
  
  * 18: Using list addition, and the set and sorted operations, compute the vocabulary of the sentences sent1 ... sent8.
  
@@ -183,7 +183,6 @@
           'Thpppppt',
           'aptly',
           'empty']
-         
    
    d. All lowercase letters except for an initial capital (i.e., titlecase)
 
@@ -208,11 +207,14 @@
         In [1]: [w for w in sent if len(w) > 4]
         Out[1]: ['sells', 'shells', 'shore']
 
- * 26: What does the following Python code do? `sum([len(w) for w in text1])` Can you use it to work out the average word length of a text?
+ * 26: What does the following Python code do? `sum([len(w) for w in text1])` 
  
    **Answer**: It returns the sum total of the lengths of all "words" in text1.
    
+   **Question**: Can you use it to work out the average word length of a text?
+
         avg_w_len = sum([len(w) for w in text1]) / float(len(text1))
+
 
  * 27: Define a function called `vocab_size(text)` that has a single parameter for the text, and which returns the vocabulary size of the text.
 
