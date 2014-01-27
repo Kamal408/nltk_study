@@ -78,6 +78,15 @@
 
    We could also eliminate any items that are not composed of letters or a hyphen or ending in a period.
 
+   **Wrong!**. The Summary (Sec. 1.6) mentions using `lower()` on all words in preparing a vocabulary. So use:
+
+        running = set(sent1)
+        running.update(sent2, sent3, sent4, sent5, sent6, sent7, sent8)
+        running = set([w.lower() for w in running])
+        sorted(list(running))
+
+   There are only a few differences in this case, but in principle there could be a large discrepancy.
+
  * 19: What is the difference between the following two lines? Which one will give a larger value? Will this be the case for other texts?
 
         >>> sorted(set([w.lower() for w in text1]))
@@ -211,6 +220,12 @@
 
         def vocab_size(text):
             return len(set(text))
+
+   **Wrong!** As in Question 18, `lower()` should be used before returning.
+
+        def vocab_size(text):
+            distinct = set([w.lower() for w in text])
+            return len(distinct)
 
  * 28: Define a function `percent(word, text)` that calculates how often a given word occurs in a text and expresses the result as a percentage.
 
