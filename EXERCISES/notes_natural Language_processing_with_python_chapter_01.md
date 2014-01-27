@@ -212,7 +212,7 @@
  
    **Answer**: It returns the sum total of the lengths of all "words" in text1.
    
-       avg_w_len = sum([len(w) for w in text1]) / float(len(text1))
+        avg_w_len = sum([len(w) for w in text1]) / float(len(text1))
 
  * 27: Define a function called `vocab_size(text)` that has a single parameter for the text, and which returns the vocabulary size of the text.
 
