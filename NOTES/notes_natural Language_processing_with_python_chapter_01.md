@@ -38,5 +38,6 @@
  
    * **[word] types**: unique forms of words or other entities such as punctuation
    * **lexical diversity**: (total words) / (unique words)
+   * **vocabulary**: When "vocabulary" is called for, the book recommends calling `lower()` before `set()` to ensure that capitalization distinctions are eliminated.
 
 [end]
