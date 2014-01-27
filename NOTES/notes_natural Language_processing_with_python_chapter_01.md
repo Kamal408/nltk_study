@@ -15,9 +15,6 @@
    * **nltk.text.Text.index(str)**: Find the index of the first occurrence of the word in the text.
    * **nltk.text.Text.collocations(self, num=20, window_size=2)**: Print collocations derived from the text, ignoring stopwords.
    * **nltk.util.bigrams(sequence, **kwargs)**: Return a sequence of bigrams from a sequence of items.
-   * ****: 
-   * ****: 
-   * ****: 
 
  1. Classes encountered
 

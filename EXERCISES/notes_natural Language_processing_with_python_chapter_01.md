@@ -236,7 +236,7 @@
             occurs = text.count(word)
             return 100 * occurs / floac(total)
 
- * 29: We have been using sets to store vocabularies. Try the following Python expres- sion: `set(sent3) < set(text1)`. Experiment with this using different arguments to `set()`. What does it do? Can you think of a practical application for this?
+ * 29: We have been using sets to store vocabularies. Try the following Python expression: `set(sent3) < set(text1)`. Experiment with this using different arguments to `set()`. What does it do? Can you think of a practical application for this?
 
    **Answer**: I think `set1 < set2` means that `set1` is a proper subset of `set2`.
 
