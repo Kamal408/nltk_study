@@ -78,7 +78,7 @@
 
    We could also eliminate any items that are not composed of letters or a hyphen or ending in a period.
 
-   **Wrong!**. The Summary (Sec. 1.6) mentions using `lower()` on all words in preparing a vocabulary. So use:
+   **Wrong!** The Summary (Sec. 1.6) mentions using `lower()` on all words in preparing a vocabulary. So use:
 
         running = set(sent1)
         running.update(sent2, sent3, sent4, sent5, sent6, sent7, sent8)
@@ -94,7 +94,7 @@
 
    **Answer**: The results should be the same, but the first will run longer; the second reduces the number of duplicates so the `for` loop runs potentially fewer times.
    
-   Wrong!
+   **Wrong!** See measurements below:
    
         In [93]: len(sorted(set([w.lower() for w in text1])))
         Out[93]: 17231
