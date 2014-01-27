@@ -129,6 +129,75 @@ or
         for i in all_uppers:
             print i
 
- * 24: Write expressions for finding all words in text6 that meet the following conditions.Theresultshouldbeintheformofalistofwords:['word1', 'word2', ...].
+ * 24: Write expressions for finding all words in text6 that meet the following conditions. The result should be in the form of a list of words: ['word1', 'word2', ...].
+
+   a. Ending in ize
+
+   **Answer**: 
+
+        In [1]: [w for w in text6 if len(w) > 4 and w[-3:] == ('ize')]
+        Out[1]: []
+
+   
+   b. Containing the letter z
+   
+   **Answer**: 
+
+        In [1]: list(set([w for w in text6 if w.lower().find('z') != -1]))
+        Out[1]: 
+        ['zhiv',
+         'zone',
+         'frozen',
+         'amazes',
+         'zoo',
+         'zoop',
+         'zoosh',
+         'AMAZING',
+         'ZOOT',
+         'Zoot',
+         'Fetchez']
+
+   
+   c. Containing the sequence of letters pt
+   
+   **Answer**: 
+
+         In [1]: list(set([w for w in text6 if w.lower().find('pt') != -1]))
+         Out[1]: 
+         ['Chapter',
+          'temptress',
+          'temptation',
+          'excepting',
+          'Thppt',
+          'Thppppt',
+          'Thpppt',
+          'ptoo',
+          'Thpppppt',
+          'aptly',
+          'empty']
+         
+   
+   d. All lowercase letters except for an initial capital (i.e., titlecase)
+
+   **Answer**: 
+
+        list(set([w for w in text6 if w[0].isupper() and w[1:].islower()]))
+   
+
+ * 25: Define `sent` to be the list of words `['she', 'sells', 'sea', 'shells', 'by', 'the', 'sea', 'shore']`. Now write code to perform the following tasks:
+
+   a. Print all words beginning with sh.
+
+   **Answer**: 
+
+        In [1]: [w for w in sent if w[0:2] == 'sh']
+        Out[1]: ['she', 'shells', 'shore']
+
+   b. Print all words longer than four characters
+
+   **Answer**: 
+
+        In [1]: [w for w in sent if len(w) > 4]
+        Out[1]: ['sells', 'shells', 'shore']
 
 [end]
