@@ -111,6 +111,15 @@ or
 
  * 22: Find all the four-letter words in the Chat Corpus (text5). With the help of a frequency distribution (FreqDist), show these words in decreasing order of frequency.
 
+   **Answer**: 
+
+        fours = [w for w in text5 if len(w) == 4]
+
+   This also finds some four-character non-words, like `"PM's"` and `'4:03'`, but let's assume the question means that.
+
+        f = FreqDist(text5)
+        reversed_pairs = [(v, k) for k, v in f.items()]
+        list(reversed(sorted(reversed_pairs)))
 
 
 [end]

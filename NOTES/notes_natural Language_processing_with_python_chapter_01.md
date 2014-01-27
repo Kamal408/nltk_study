@@ -22,7 +22,8 @@
  1. Classes encountered
 
    * **class nltk.probability.FreqDist(text)**: records the number of times each outcome of an experiment has occurred. Some of the methods:
-   
+
+     1. `items()`: Return list of (key, value) tuples.
      1. `freq(sample)`: Return the frequency of a given sample.
      1. `plot(*args, **kwargs)`: Plot samples from the frequency distribution. If two integer parameters m, n are supplied, plot a subset of the samples, beginning with m and stopping at n-1.
      1. `B()`: Return the total number of sample values (or "bins") that have counts greater than zero.
